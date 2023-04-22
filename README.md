@@ -41,7 +41,7 @@ In summary, the main contributions of this paper are as follows:
 - First: the dataset should be prepared using ``` prepare_dataset_BinarySegmentation.py ```, this saves the input slices, lung mask, and infection mask as ``` .pt ``` files
 The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 
-- Second:  ``` train_test_PDAttUnet_BinarySegmentation.py ``` can be used to train and test the D-TrAttUnet architecture for the Binary Segmentation Task.
+- Second:  ``` train_test_DTrAttUnet_BinarySegmentation.py ``` can be used to train and test the D-TrAttUnet architecture for the Binary Segmentation Task.
 
 ##### Multi-Classes Segmentation:
 
@@ -50,7 +50,7 @@ The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 - First: the dataset should be prepared using ``` prepare_dataset_MultiClassesSegmentation.py ```, this saves the input slices, lung mask, and infection mask as ``` .pt ``` files
 The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 
-- Second:  ``` train_test_PDAttUnet_MultiClassesSegmentation.py ``` can be used to train and test the D-TrAttUnet architecture for the Multi-Classes Segmentation Task.
+- Second:  ``` train_test_DTrAttUnet_MultiClassesSegmentation.py ``` can be used to train and test the D-TrAttUnet architecture for the Multi-Classes Segmentation Task.
 
 
 ## Citation: If you found this Repository useful, please cite:
