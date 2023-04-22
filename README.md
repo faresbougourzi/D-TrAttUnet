@@ -1,17 +1,17 @@
-# PDAtt-Unet: Pyramid Dual-Decoder Attention Unet For Covid-19 Infection Segmentation from CT-scans.
+# D-TrAttUnet: Dual-Decoder Transformer-Based Attention Unet  Architecture for Binary and Multi-classes Covid-19 Infection Segmentation.
 
 In summary, the main contributions of this paper are as follows:
 
-- Inspired by the Att-Unet architecture, we propose three different architectures for segmenting Covid-19 infections from CT-scans. The first variant, Pyramid Att-Unet (PAtt-Unet), uses image pyramids to preserve the spatial awareness in all of the encoder layers. Unlike most attention-based segmentation architectures, our proposed PAtt-Unet uses the attention gates not only in the decoder but also in the encoder.
+- A hybrid CNN-Transformer network is proposed that leverages the strengths of Transformers and CNNs to extract high-level features during the encoding phase.
 
-- Based on PAtt-Unet and DAtt-Unet, we propose a Pyramid Dual-Decoder Att-Unet (PDAtt-Unet) architecture using the pyramid and attention gates to preserve the global spatial awareness in all of the encoder layers. In the decoding phase, PDAtt-Unet has two independent decoders that use the Attention Gates to segment infection and lung simultaneously.
+- The proposed D-TrAttUnet encoder consists of two paths; the Transformer path and the Unet-like Fusion path. The Transformer path considers 2D patches of the input image as input, and consecutive Transformer layers to extract high representations at different levels. Four different Transformer features at different levels are injected into the Unet-like Fusion Encoder through UpResBlocks. On the other hand, the first layer of the Unet-like path uses the convolutional layers on the input image. The following Unet-Like Fusion layers combine the Transformer features with the previous layer of the Unet-Like path through concatenation and ResBlocks.
 
-- To address the shortcomings of the binary cross entropy loss function in distinguishing the infection boundaries and the small infection regions, we propose the ${BCE}_{Edge}$ loss that focuses on the edges of the infection regions.
+- The proposed D-TrAttUnet decoder consists of dual identical decoders. The objective of using two decoders is to segment Covid-19 infection and the lung regions simultaneously. Each decoder has four Attention Gates (AG), ResBlocks and bilinear Upsampling  layers similar to the Attion Unet (AttUnet) architecture, taking advantage of CNN-Transformer and multi-task tricks.
 
-- To evaluate the performance of our proposed architectures, we use four public datasets with two evaluation scenarios (intra and cross datasets),  all slices from CT scans are used for the training and testing phases. 
 
-- To compare the performance of our approach with other CNN-based segmentation architectures, we use three baseline architectures (Unet, Att-Unet and Unet++) and three state-of-the-art architectures for Covid-19 segmentation (InfNet, SCOATNet, and nCoVSegNet). The experimental results show the superiority of our proposed architecture compared to the basic segmentation architectures as well as to the three state-of-the-art architectures in both intra-database and inter-database evaluation scenarios.
+- To evaluate the performance of our proposed architecture, both binary infection segmentation and multi-classes infection segmentation are investigated using three publicly available datasets. 
 
+- The comparison with three baseline architectures (Unet \cite{ronneberger_u-net_2015}, Att-Unet \cite{oktay_attention_2018}, and Unet++ \cite{zhou_unet_2018}) and three state-of-the-art architectures for Covid-19 segmentation (CopleNet \cite{wang_noise-robust_2020}, AnamNet \cite{paluru_anam-net_2021}, and SCOATNet \cite{zhao2021scoat}), demonstrates the superiority of our proposed D-TrAttUnet architecture in both Binary and Multi-classes Segmentation tasks.
 
 ![PDEAttUnet (1)](https://user-images.githubusercontent.com/18519110/228053614-95a1574a-5c8a-45f2-a0d0-f30590474a2f.png)
 
