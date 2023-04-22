@@ -23,12 +23,12 @@ In summary, the main contributions of this paper are as follows:
 
 
 <p align="center">
-  Figure 2: Detailed Structure of the proposed D-TrAttUnet architecture..
+  Figure 2: Detailed Structure of the proposed D-TrAttUnet architecture.
 </p> 
 
 ## Implementation:
-#### PDAtt-Unet architecture and Hybrid loss function:
-``` Architectures.py ``` contains our implementation of the comparison CNN baseline architectures  (Unet, Att-Unet and Unet++) and the proposed PDAtt-Unet. architecture.
+#### D-TrAttUnet architecture:
+``` Architectures.py ``` contains the implementation of the proposed D-TrAttUnet architecture.
 
 
 #### Training and Testing Implementation:
@@ -37,7 +37,7 @@ In summary, the main contributions of this paper are as follows:
 - First: the dataset should be prepared using ``` prepare_dataset.py ```, this saves the input slices, lung mask, and infection mask as ``` .pt ``` files
 The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 
-- Second:  ``` train_test_PDAttUnet.py ``` can be used to train and test the proposed PDAtt-Unet architecture with the proposed Hybrid loss function (with Edge loss).
+- Second:  ``` train_test_PDAttUnet_BinarySegmentation.py ``` can be used to train and test the D-TrAttUnet architecture for the Binary Segmentation Task.
 
 
 ## Citation: If you found this Repository useful, please cite:
