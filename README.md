@@ -16,14 +16,19 @@ In summary, the main contributions of this paper are as follows:
 ![PDEAttUnet (1)](https://user-images.githubusercontent.com/18519110/228053614-95a1574a-5c8a-45f2-a0d0-f30590474a2f.png)
 
 <p align="center">
-  Figure 1: Our proposed PDEAtt-Unet architecture details.
+  Figure 1: The summary of our proposed D-TrAttUnet approach.
+</p> 
+
+[Uploading D-TrAttUnet3.pdf…]()
+
+<p align="center">
+  Figure 2: Detailed Structure of the proposed D-TrAttUnet architecture..
 </p> 
 
 ## Implementation:
 #### PDAtt-Unet architecture and Hybrid loss function:
 ``` Architectures.py ``` contains our implementation of the comparison CNN baseline architectures  (Unet, Att-Unet and Unet++) and the proposed PDAtt-Unet. architecture.
 
-``` Hybrid_loss.py ``` contains the proposed Edge loss function.
 
 #### Training and Testing Implementation:
 ``` detailed train and test ``` contains the training and testing implementation.
@@ -37,25 +42,12 @@ The datasets could be donwloaded from: http://medicalsegmentation.com/covid19/
 ## Citation: If you found this Repository useful, please cite:
 
 ```bash
-@article{bougourzi2023pdatt,
-  title={PDAtt-Unet: Pyramid Dual-Decoder Attention Unet for Covid-19 infection segmentation from CT-scans},
+@article{bougourzi2023d,
+  title={D-TrAttUnet: Dual-Decoder Transformer-Based Attention Unet Architecture for Binary and Multi-classes Covid-19 Infection Segmentation},
   author={Bougourzi, Fares and Distante, Cosimo and Dornaika, Fadi and Taleb-Ahmed, Abdelmalik},
-  journal={Medical Image Analysis},
-  pages={102797},
-  year={2023},
-  publisher={Elsevier}
+  journal={arXiv preprint arXiv:2303.15576},
+  year={2023}
 }
 ```
-## Ablation architectures: PAttUnet and DAtt-Unet 
-
-
-![PAttUnet (1)](https://user-images.githubusercontent.com/18519110/164985902-fbf77196-e435-40ec-aa89-bdeb1cdfc093.png)
-<p align="center">
-  Figure 2: Our proposed PAtt-Unet architecture details.
-</p>
-
-![CDAttUnet (1)](https://user-images.githubusercontent.com/18519110/164985900-d1b48555-8a6d-4bb0-86f8-d8ddf7b415df.png)
-<p align="center">
-  Figure 3: Our proposed DAtt-Unet architecture details.
-</p>  
+ 
 
