@@ -13,15 +13,15 @@ In summary, the main contributions of this paper are as follows:
 
 - The comparison with three baseline architectures (Unet \cite{ronneberger_u-net_2015}, Att-Unet \cite{oktay_attention_2018}, and Unet++ \cite{zhou_unet_2018}) and three state-of-the-art architectures for Covid-19 segmentation (CopleNet \cite{wang_noise-robust_2020}, AnamNet \cite{paluru_anam-net_2021}, and SCOATNet \cite{zhao2021scoat}), demonstrates the superiority of our proposed D-TrAttUnet architecture in both Binary and Multi-classes Segmentation tasks.
 
-![General drawio (1)](https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)
-
- <img src="(https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)" width="200" />
-
+ <!-- + ![General drawio (1)](https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)+ -->
+<p align="center">
+ <img src="https://github.com/faresbougourzi/D-TrAttUnet/blob/main2/Images/General.png" width="500" hight= "500" />
+</p>
 <p align="center">
   Figure 1: The summary of our proposed D-TrAttUnet approach.
 </p> 
 
-![D-TrAttUnet drawio](https://user-images.githubusercontent.com/18519110/233785158-3c28b2c2-5872-42b4-bfb2-f37eb9a2183f.png)
+ ![D-TrAttUnet drawio](https://user-images.githubusercontent.com/18519110/233785158-3c28b2c2-5872-42b4-bfb2-f37eb9a2183f.png)
 
 
 <p align="center">
