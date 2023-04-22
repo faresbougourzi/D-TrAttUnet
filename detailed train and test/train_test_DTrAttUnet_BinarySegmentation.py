@@ -127,7 +127,7 @@ F1_mean, dise_mean, IoU_mean = [], [], []
 
 dataset_idx = 3
 
-modl_n = 'PYAttUNet'
+modl_n = 'DTrAttUnet'
 
 epochs = 60
 batch_size = 6
@@ -154,7 +154,7 @@ for itr in range(runs):
 
     #######    
     import Architectures as networks
-    model = getattr(networks, modl_n)()
+    model = getattr(networks, modl_n)(in_channels=3, out_channels=1, img_size=224)
     #######      
     
     torch.set_grad_enabled(True)
