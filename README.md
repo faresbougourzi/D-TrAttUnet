@@ -15,7 +15,7 @@ In summary, the main contributions of this paper are as follows:
 
 ![General drawio (1)](https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)
 
-![General drawio (1)] <img src="(https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)" width="200" />
+ <img src="(https://user-images.githubusercontent.com/18519110/233785211-8edaf09f-1fef-4b4e-9b76-9870b8bea9a9.png)" width="200" />
 
 <p align="center">
   Figure 1: The summary of our proposed D-TrAttUnet approach.
